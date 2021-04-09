@@ -1,204 +1,64 @@
 <?php include('./includes/header.html'); 
-      include('./includes/include.php'); ?>
+      include('./includes/include.php'); 
+      ?>
 
 <main>
-
-  <section class="py-5 text-center container">
-    
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-      <p class="h1">Welcome to Spow Webshop</p>
-      </div>
-    </div>
-  </section>
-
-  <div class="album py-5 bg-light">
-    <div class="container">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="background">
+    <section class="py-5 text-center container">
         
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="card">
-                <img class="card-img-top" src="./images/10700k.png" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title"><a href="product.html" title="View Product">Intel Core i7 10700K - Processor</a></h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <div class="row">
-                        <div class="col">
-                            <p class="btn btn-danger btn-block">380.00 $</p>
-                        </div>
-                        <div class="col">
-                            <a href="#" class="btn btn-success btn-block">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+        <p class="h1">Welcome to Spow Webshop</p>
         </div>
-
-
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="card">
-                <img class="card-img-top" src="./images/3600.png" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title"><a href="product.html" title="View Product">AMD Ryzen 5 3600 - Processor</a></h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <div class="row">
-                        <div class="col">
-                            <p class="btn btn-danger btn-block">200.00 $</p>
-                        </div>
-                        <div class="col">
-                            <a href="#" class="btn btn-success btn-block">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="card">
-                <img class="card-img-top" src="./images/5800x.png" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title"><a href="product.html" title="View Product">AMD Ryzen 7 5800X - Processor</a></h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <div class="row">
-                        <div class="col">
-                            <p class="btn btn-danger btn-block">450.00 $</p>
-                        </div>
-                        <div class="col">
-                            <a href="#" class="btn btn-success btn-block">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="card">
-                <img class="card-img-top" src="./images/5600x.png" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title"><a href="product.html" title="View Product">AMD Ryzen 5 5600X - Processor</a></h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <div class="row">
-                        <div class="col">
-                            <p class="btn btn-danger btn-block">370.00 $</p>
-                        </div>
-                        <div class="col">
-                            <a href="#" class="btn btn-success btn-block">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="card">
-                <img class="card-img-top" src="./images/9700k.png" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title"><a href="product.html" title="View Product">Intel Core i7 9700K - Processor</a></h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <div class="row">
-                        <div class="col">
-                            <p class="btn btn-danger btn-block">250.00 $</p>
-                        </div>
-                        <div class="col">
-                            <a href="#" class="btn btn-success btn-block">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="card">
-                <img class="card-img-top" src="./images/10900k.png" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title"><a href="product.html" title="View Product">Intel Core i9 10900K - Processor</a></h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <div class="row">
-                        <div class="col">
-                            <p class="btn btn-danger btn-block">480.00 $</p>
-                        </div>
-                        <div class="col">
-                            <a href="#" class="btn btn-success btn-block">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="card">
-                <img class="card-img-top" src="./images/3600.png" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title"><a href="product.html" title="View Product">Intel Core i5 10600K - Processor</a></h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <div class="row">
-                        <div class="col">
-                            <p class="btn btn-danger btn-block">70.00 $</p>
-                        </div>
-                        <div class="col">
-                            <a href="#" class="btn btn-success btn-block">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="card">
-                <img class="card-img-top" src="./images/3600.png" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title"><a href="product.html" title="View Product">Intel Core i3-9100 - Processor</a></h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <div class="row">
-                        <div class="col">
-                            <p class="btn btn-danger btn-block">120.00 $</p>
-                        </div>
-                        <div class="col">
-                            <a href="#" class="btn btn-success btn-block">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="card">
-                <img class="card-img-top" src="./images/3600.png" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title"><a href="product.html" title="View Product">AMD Ryzen 3 2200G - Processor</a></h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <div class="row">
-                        <div class="col">
-                            <p class="btn btn-danger btn-block">120.00 $</p>
-                        </div>
-                        <div class="col">
-                            <a href="#" class="btn btn-success btn-block">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-      </div>
+    </section>
     </div>
-  </div>
 
+    <div class="album py-5 bg-light">
+    <h3 align="center">Products</h3><br />
+    <label for="orderby">Order by:</label>
+    <select name="orderby" id="orderby">
+        <option value="all">All</option>
+        <option value="amd">AMD</option>
+        <option value="intel">Intel</option>
+    </select>
+        <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            
+                <?php
+                    $query = "SELECT * FROM product ORDER BY productid ASC";
+                    $result = mysqli_query($connect, $query);
+                    if(mysqli_num_rows($result) > 0)
+                    {
+                        while($row = mysqli_fetch_array($result))
+                        {
+                    ?>
+                <div class="col-md-4">
+                    <form method="post" action="index.php?action=add&id=<?php echo $row["id"]; ?>">
+                        <div style="border:1px solid #333; background-color:#f1f1f1; border-radius:5px; padding:16px;" align="center">
+                            <img src="images/<?php echo $row["./images/2200.png"]; ?>" class="img-responsive" /><br />
+
+                            <h4 class="text-info"><?php echo ( isset ( $rows["name"] ) ? $rows["name"] : '' ); ?></h4>
+
+                            <h4 class="text-danger"><?php echo ( isset ( $rows["price"] ) ? $rows["price"] : '' ); ?></h4>
+
+                            <input type="text" name="quantity" value="1" class="form-control" />
+
+                            <input type="hidden" name="hidden_name" value="<?php echo $row["name"]; ?>" />
+
+                            <input type="hidden" name="hidden_price" value="<?php echo $row["price"]; ?>" />
+
+                            <input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn btn-success" value="Add to Cart" />
+                        </div>
+                    </form>
+                </div>
+                <?php
+                        }
+                    }
+                ?>
+        </div>
+        </div>
+    </div>
 </main>
 
-<!-- <?php
-// $sql = "SELECT * FROM customer;";
-// $result = mysqli_query($conn, $sql);
-// $resultCheck = mysqli_num_rows($result);
-
-//   if($resultCheck > 0) {
-//     while($row = mysqli_fetch_assoc($result)) {
-//       echo $row['customerid'];
-//     }
-//   }
-
-?> -->
- 
 <?php include('./includes/footer.html'); ?>
