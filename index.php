@@ -1,6 +1,5 @@
 <?php include('./includes/header.html'); 
-      include('./includes/include.php'); 
-      ?>
+      include('./includes/include.php'); ?>
 
 <main>
     <div class="background">
@@ -8,7 +7,7 @@
         
         <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
-        <p class="h1">Welcome to Spow Webshop</p>
+        <p class="h1">Welcome to Webshop</p>
         </div>
         </div>
     </section>
@@ -34,13 +33,13 @@
                         {
                     ?>
                 <div class="col-md-4">
-                    <form method="post" action="index.php?action=add&id=<?php echo $row["id"]; ?>">
+                    <form method="post" action="./shoppingcart.php?action=add&id=<?php echo $row["productid"]; ?>">
                         <div style="border:1px solid #333; background-color:#f1f1f1; border-radius:5px; padding:16px;" align="center">
-                            <img src="images/<?php echo $row["./images/2200.png"]; ?>" class="img-responsive" /><br />
+                            <img src="<?php echo $row["image"]; ?>" width="200px" height="200px" class="img-responsive" /><br />
 
-                            <h4 class="text-info"><?php echo ( isset ( $rows["name"] ) ? $rows["name"] : '' ); ?></h4>
+                            <h4 class="text-info"><?php echo $row["name"]; ?></h4>
 
-                            <h4 class="text-danger"><?php echo ( isset ( $rows["price"] ) ? $rows["price"] : '' ); ?></h4>
+                            <h4 class="text-danger"><?php echo $row["price"]; ?></h4>
 
                             <input type="text" name="quantity" value="1" class="form-control" />
 
