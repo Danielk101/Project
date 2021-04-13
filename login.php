@@ -1,6 +1,6 @@
 <?php include('./includes/header.html'); 
       include('./includes/include.php'); ?>
-<br>
+<br><br>
 <main class="form-login text-center">
   <form method="post" action="./actions/ac_visitor.php">
     <h1 class="h3 mb-3 fw-normal">Please Log In</h1>
@@ -18,6 +18,5 @@
     <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
   </form>
 </main>
-<br><br><br><br><br><br><br><br><br>
 
 <?php include('./includes/footer.html'); ?>

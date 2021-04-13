@@ -76,8 +76,8 @@ if(isset($_GET["action"]))
 					<tr>
 						<td><?php echo $values["item_name"]; ?></td>
 						<td><?php echo $values["item_quantity"]; ?></td>
-						<td>$ <?php echo $values["item_price"]; ?></td>
-						<td>$ <?php echo number_format($values["item_quantity"] * $values["item_price"], 2);?></td>
+						<td><?php echo $values["item_price"]; ?></td>
+						<td><?php echo number_format($values["item_quantity"] * $values["item_price"], 2);?></td>
 						<td><a href="shoppingcart.php?action=delete&id=<?php echo $values["item_id"]; ?>"><span class="text-danger">Remove</span></a></td>
 					</tr>
 					<?php
@@ -95,7 +95,7 @@ if(isset($_GET["action"]))
 						
 				</table>
 				<form method="post" action="./checkout.php">
-				<button class="btn btn-success checkout" type="submit">Continue to checkout</button>
+				<button class="btn btn-success" type="submit">Continue to checkout</button>
 				</form>
 			</div>
 		</div>

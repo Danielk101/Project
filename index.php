@@ -14,13 +14,6 @@
     </div>
 
     <div class="album py-5 bg-light">
-    <h3 align="center">Products</h3><br />
-    <label for="orderby">Order by:</label>
-    <select name="orderby" id="orderby">
-        <option value="all">All</option>
-        <option value="amd">AMD</option>
-        <option value="intel">Intel</option>
-    </select>
         <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             
