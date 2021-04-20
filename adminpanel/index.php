@@ -26,8 +26,6 @@
 
                             <h4 class="text-danger"><?php echo $row["price"]; ?></h4>
 
-                            <input type="text" name="quantity" value="1" class="form-control" />
-
                             <input type="hidden" name="hidden_name" value="<?php echo $row["name"]; ?>" />
 
                             <input type="hidden" name="hidden_price" value="<?php echo $row["price"]; ?>" />
