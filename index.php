@@ -1,5 +1,6 @@
-<?php include('./includes/header.html'); 
-      include('./includes/include.php'); ?>
+<?php include('./includes/header.php'); 
+      include('./includes/include.php'); 
+      ?>
 
 <main>
     <div class="background">

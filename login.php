@@ -1,5 +1,6 @@
-<?php include('./includes/header.html'); 
-      include('./includes/include.php'); ?>
+<?php include('./includes/header.php'); 
+      include('./includes/include.php'); 
+      ?>
 <br><br>
 <main class="form-login text-center">
   <form method="post" action="./actions/ac_login.php">

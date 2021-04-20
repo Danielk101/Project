@@ -44,11 +44,22 @@
 					Contact
 				  </a>
 				</li>
+				<?php 
+				session_start();
+				if(isset($_SESSION['loggedin'])) : ?>
 				<li class="nav-item pl-2 mb-2 mb-md-0">
-				  <a href="./login.php" class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light">
-					Sign in
+				  <a href="./logout.php" class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light">
+					Logout
 				  </a>
 				</li>
+                    <?php else : ?>
+						<li class="nav-item pl-2 mb-2 mb-md-0">
+				  			<a href="./login.php" class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light">
+						Sign in
+				  </a>
+				</li>
+                        </h5>
+                    <?php endif ?> 
 				<li class="nav-item pl-2 mb-2 mb-md-0">
 				  <a href="./registervisitor.php" class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light">
 					Sign up</a>

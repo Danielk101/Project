@@ -1,7 +1,7 @@
 <?php
 // Visitor Register
 include('../includes/include.php');
-
+session_start();
 if ($_POST) {
 	$email = $_POST['email'];
 	$password = $_POST['password'];

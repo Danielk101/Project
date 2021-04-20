@@ -6,14 +6,15 @@ include('../includes/include.php');
 	
 		$query = mysqli_query($connect, "SELECT * FROM admin WHERE  email='$email' AND password='$password'");
 	
-	$rows = mysqli_num_rows($query);
-		if($rows == 1){
-		$_SESSION['message'] = 'Successfully Logged In!';
+		$result = mysqli_query($connect, $query);
+
+		$rows = mysqli_num_rows($query);
+	if (mysqli_num_rows($result) == 0){
+		$_SESSION['loggedin'] = 'yes';
 		header("Location: ../index.php"); 
 	} 
 	 else
 	{
-		$_SESSION['error'] = 'Email or Password Incorrect!';
 		header("Location: ../adminlogin.php");
 	}	
 }

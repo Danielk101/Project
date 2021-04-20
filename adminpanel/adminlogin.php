@@ -1,5 +1,6 @@
-<?php include('./includes/headeradmin.html'); 
-      include('./includes/include.php'); ?>
+<?php include('./includes/headeradmin.php'); 
+      include('./includes/include.php'); 
+      ?>
 <br><br>
 <main class="form-login text-center">
   <form method="post" action="./actions/ac_adminlogin.php" onsubmit="return(validate());">

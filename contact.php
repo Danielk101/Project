@@ -1,4 +1,4 @@
-<?php include('./includes/header.html'); 
+<?php include('./includes/header.php'); 
       include('./includes/include.php');
       include('./actions/mailer.php'); ?>
 

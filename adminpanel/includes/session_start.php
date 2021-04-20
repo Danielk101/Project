@@ -1,5 +1,3 @@
 <?php
 
-session_start();
-
-$message = "";
+// session_start();

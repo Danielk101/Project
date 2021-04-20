@@ -1,5 +1,6 @@
-<?php include('./includes/header.html'); 
-      include('./includes/include.php'); ?>
+<?php include('./includes/header.php'); 
+      include('./includes/include.php'); 
+      session_start();?>
  <br><br>
 <main class="form-register text-center">
   <form method="post" action="./actions/ac_visitor.php">
