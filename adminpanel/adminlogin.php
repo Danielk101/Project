@@ -1,9 +1,9 @@
-<?php include('./includes/header.html'); 
+<?php include('./includes/headeradmin.html'); 
       include('./includes/include.php'); ?>
 <br><br>
 <main class="form-login text-center">
-  <form method="post" action="./actions/ac_login.php">
-    <h1 class="h3 mb-3 fw-normal">Please Log In</h1>
+  <form method="post" action="./actions/ac_adminlogin.php" onsubmit="return(validate());">
+    <h1 class="h3 mb-3 fw-normal">Admin Log In</h1>
 
     <div class="form-floating">
       <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>

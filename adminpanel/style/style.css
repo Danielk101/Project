@@ -1,14 +1,9 @@
-.content {
-  margin-right: 10px;
-}
 /* Background */
 .background {
-  background-image: url('../images/background.png');
-  background-size: 100% 100%;
-}
-.h1 {
-  color: lightgray;
-}
+    background-image: url('../images/background.png');
+    background-size: 100% 100%;
+  }
+  
 /* Footer */
 .site-footer
 {
@@ -178,14 +173,12 @@
 
 /* Registerform & Login Form */
 .form-register {
-  width: 500px;
-  margin: auto;
-}
-
-.form-login {
-  width: 500px;
-  margin: auto;
-}
-/* End Registerform & Login Form */
-
-/* header */
+    width: 500px;
+    margin: auto;
+  }
+  
+  .form-login {
+    width: 500px;
+    margin: auto;
+  }
+  /* End Registerform & Login Form */

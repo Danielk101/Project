@@ -1,10 +1,11 @@
 <?php
+// Visitor Login
 include('../includes/include.php');
 	if(isset($_POST['submit'])){
 		$email=$_POST['email'];
 		$password=$_POST['password'];
 	
-		$query = mysqli_query($connect, "SELECT * FROM admin WHERE  email='$email' AND password='$password'");
+		$query = mysqli_query($connect, "SELECT * FROM users WHERE email='$email' AND password='$password'");
 	
 	$rows = mysqli_num_rows($query);
 		if($rows == 1){
@@ -14,6 +15,6 @@ include('../includes/include.php');
 	 else
 	{
 		$_SESSION['error'] = 'Email or Password Incorrect!';
-		header("Location: ../adminlogin.php");
+		header("Location: ../login.php");
 	}	
 }
