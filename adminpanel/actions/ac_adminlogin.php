@@ -1,20 +1,21 @@
 <?php
+//Admin login
 include('../includes/include.php');
+session_start();
 	if(isset($_POST['submit'])){
 		$email=$_POST['email'];
 		$password=$_POST['password'];
 	
-		$query = mysqli_query($connect, "SELECT * FROM admin WHERE  email='$email' AND password='$password'");
+		$query = ("SELECT * FROM admin WHERE  email='$email' AND password='$password'");
 	
 		$result = mysqli_query($connect, $query);
 
-		$rows = mysqli_num_rows($query);
-	if (mysqli_num_rows($result) == 0){
-		$_SESSION['loggedin'] = 'yes';
-		header("Location: ../index.php"); 
+	if (mysqli_num_rows($result) === 1) {
+		$_SESSION['adminloggedin'] = 'yes';
+		header("Location: ../index"); 
 	} 
 	 else
 	{
-		header("Location: ../adminlogin.php");
+		header("Location: ../adminlogin");
 	}	
 }

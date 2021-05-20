@@ -18,7 +18,7 @@
     
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<a class="navbar-brand" href="./index.php">
+			<a class="navbar-brand" href="./index">
 				<img src="./images/webshop.png" width="80" height="50">
 			</a>
 		  
@@ -28,19 +28,19 @@
 			</button>
 
 			<ol class="breadcrumb">
-			  <li class="breadcrumb-item"><a class="waves-effect" href="./index.php">Home</a></li>
+			  <li class="breadcrumb-item"><a class="waves-effect" href="./index">Home</a></li>
 			</ol>
 			
 			<div class="collapse navbar-collapse" id="basicExampleNav11">
 		  
 			  <ul class="navbar-nav ml-auto">
 				<li class="nav-item pl-2 mb-2 mb-md-0">
-				  <a href="./shoppingcart.php" class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light">
-					Shopping Cart
+				  <a href="./shoppingcart" class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light">
+					Winkelmand
 				  </a>
 				</li>
 				<li class="nav-item pl-2 mb-2 mb-md-0">
-				  <a href="./contact.php" class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light">
+				  <a href="./contact" class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light">
 					Contact
 				  </a>
 				</li>
@@ -48,21 +48,21 @@
 				session_start();
 				if(isset($_SESSION['loggedin'])) : ?>
 				<li class="nav-item pl-2 mb-2 mb-md-0">
-				  <a href="./logout.php" class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light">
-					Logout
+				  <a href="./logout" class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light">
+					Uitloggen
 				  </a>
 				</li>
                     <?php else : ?>
 						<li class="nav-item pl-2 mb-2 mb-md-0">
-				  			<a href="./login.php" class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light">
-						Sign in
+				  			<a href="./login" class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light">
+						Inloggen
 				  </a>
 				</li>
                         </h5>
                     <?php endif ?> 
 				<li class="nav-item pl-2 mb-2 mb-md-0">
-				  <a href="./registervisitor.php" class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light">
-					Sign up</a>
+				  <a href="./registervisitor" class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light">
+					Registreer</a>
 				</li>
 			  </ul>
 			</div>

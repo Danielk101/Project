@@ -18,7 +18,7 @@
     
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<a class="navbar-brand" href="../index.php">
+			<a class="navbar-brand" href="../index">
 				<img src="./images/webshop.png" width="80" height="50">
 			</a>
 		  
@@ -28,11 +28,29 @@
 			</button>
 
 			<ol class="breadcrumb">
-			  <li class="breadcrumb-item"><a class="waves-effect"  href="./index.php">Home</a></li>
+			  <li class="breadcrumb-item"><a class="waves-effect" href="./index">Home</a></li>
 			</ol>
 			
 			<div class="collapse navbar-collapse" id="basicExampleNav11">
-		
+		  
+			  <ul class="navbar-nav ml-auto">
+				<?php 
+				session_start();
+				if(isset($_SESSION['adminloggedin'])) : ?>
+				<li class="nav-item pl-2 mb-2 mb-md-0">
+				  <a href="./logout" class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light">
+					Uitloggen
+				  </a>
+				</li>
+                    <?php else : ?>
+						<li class="nav-item pl-2 mb-2 mb-md-0">
+				  			<a href="./adminlogin" class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light">
+						Inloggen
+				  </a>
+				</li>
+                        </h5>
+                    <?php endif ?> 
+			  </ul>
 			</div>
 		  </nav>
 	</header>

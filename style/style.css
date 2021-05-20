@@ -10,6 +10,11 @@
   color: lightgray;
 }
 /* Footer */
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 .site-footer
 {
   background-color:#212529;
@@ -17,7 +22,7 @@
   font-size:15px;
   line-height:24px;
   color:#737373;
-  margin-top: 100px;
+  margin-top: auto;
 }
 .site-footer hr
 {
@@ -188,4 +193,6 @@
 }
 /* End Registerform & Login Form */
 
-/* header */
+.titel {
+  text-align: center;
+}
