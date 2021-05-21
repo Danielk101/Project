@@ -24,6 +24,15 @@
                             echo $_SESSION['success'];
                             unset($_SESSION['success']);
                         }
+                        if (isset($_SESSION['ingelogd'])) {
+                            echo $_SESSION['ingelogd'];
+                            unset($_SESSION['ingelogd']);
+                        }
+                        
+                        if (isset($_SESSION['uitgelogd'])) {
+                            echo $_SESSION['uitgelogd'];
+                            unset($_SESSION['uitgelogd']);
+                        }
                     ?>
                     </div>
                 </label>
@@ -42,7 +51,7 @@
                     <form method="post" action="./shoppingcart?action=add&id=<?php echo $row["productid"]; ?>">
                         <div style="border:2px solid #333; background-color:#f1f1f1; margin-bottom:10px;  min-height: 450px; border-radius:5px; padding:16px;" align="center">
                             <img src="<?php echo $row["image"]; ?>" width="200px" height="200px" class="img-responsive" /><br />
-
+            
                             <h4 class="text"><?php echo $row["name"]; ?></h4>
 
                             <h5 class="text-info"><?php echo $row["description"]; ?></h5>

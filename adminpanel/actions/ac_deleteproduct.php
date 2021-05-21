@@ -9,8 +9,8 @@ session_start();
 
     if ($result) {
 		header("Location: ../index"); 
-	} 
-	 else
-	{
+		$_SESSION['verwijderd']="Product Verwijderd!";
+		exit();
+	} else {
 		header("Location: ../index");
 	}	

@@ -11,7 +11,7 @@ session_start();
 
 			if(mysqli_num_rows($query_run)>0){
 				header("Location: ../registervisitor");
-				$_SESSION['msg']="This email has already been used!";
+				$_SESSION['msg']="Deze email is al in gebruik!";
 				exit();
 			} else {
 				$query = "INSERT INTO users (email, password)VALUES ('$email', '$password')";

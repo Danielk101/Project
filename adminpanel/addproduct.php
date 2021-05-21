@@ -33,7 +33,7 @@
                     </div>
                         <div class="form-group">
                             <label for="exampleFormControlFile1">Product Foto</label>
-                            <input type="file" class="form-control-file" name="image" id="exampleFormControlFile1" required>
+                            <input type="file" class="form-control-file" name="image" id="image" required>
                         </div>
                     <div class=" d-flex flex-column text-center px-5 mt-3 mb-3"> <small class="agree-text">Copyright &copy; 2021 All Rights Reserved by </small> <a href="#" class="terms">Terms & Conditions</a> </div> 
 

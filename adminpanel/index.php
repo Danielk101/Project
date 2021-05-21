@@ -1,20 +1,33 @@
 <?php include('./includes/headeradmin.php'); 
       include('../includes/include.php'); 
-       
-    
+
        //check if logged in
     if($_SESSION['adminloggedin']) {
         //allow
     } else {
         //redirect to the login page
         header('Location: ./adminlogin'); } 
-     ?>
+?>
 
 <main> 
-       
     <div class="album py-5 bg-light">
     <center class="h1">Adminpanel</center> 
         <div class="container">
+        <?php 
+            if (isset($_SESSION['adminlogin'])) {
+                echo $_SESSION['adminlogin'];
+                unset($_SESSION['adminlogin']);
+            }
+            if (isset($_SESSION['toegevoegd'])) {
+                echo $_SESSION['toegevoegd'];
+                unset($_SESSION['toegevoegd']);
+            }
+            if (isset($_SESSION['verwijderd'])) {
+                echo $_SESSION['verwijderd'];
+                unset($_SESSION['verwijderd']);
+            }
+        ?>
+        <br>
         <a href="addproduct" name="add_product" style="margin-bottom:10px;" class="btn btn-success">Voeg product toe!</a>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             
@@ -53,6 +66,5 @@
         </div>
     </div>
 </main>
-
 
 <?php include('../includes/footer.html'); ?>

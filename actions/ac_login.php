@@ -13,9 +13,11 @@ session_start();
 	if (mysqli_num_rows($result) === 1) {
 		$_SESSION['loggedin'] = 'yes';
 		header("Location: ../index"); 
-	} 
-	 else
-	{
+		$_SESSION['ingelogd']="U bent ingelogd!";
+		exit();
+	} else {
 		header("Location: ../login");
+		$_SESSION['error']="Ongeldige Login!";
+		exit();
 	}	
 }

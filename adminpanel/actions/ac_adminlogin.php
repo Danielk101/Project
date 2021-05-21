@@ -13,9 +13,11 @@ session_start();
 	if (mysqli_num_rows($result) === 1) {
 		$_SESSION['adminloggedin'] = 'yes';
 		header("Location: ../index"); 
-	} 
-	 else
-	{
+		$_SESSION['adminlogin']="U bent ingelogd als admin!";
+		exit();
+	} else {
 		header("Location: ../adminlogin");
+		$_SESSION['onjuist']="Ongeldige Login!";
+		exit();
 	}	
 }

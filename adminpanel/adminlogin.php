@@ -16,6 +16,16 @@
     </div>
     <br>
     <input type="submit" class="w-100 btn btn-lg btn-primary" name="submit" value="Log In!" />
+    <div class="form-floating">
+      <label for="floatingPassword">
+        <?php 
+          if (isset($_SESSION['onjuist'])) {
+            echo $_SESSION['onjuist'];
+            unset($_SESSION['onjuist']);
+          }
+        ?>
+      </label>
+    </div>
     <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
   </form>
 </main>

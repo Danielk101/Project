@@ -56,7 +56,7 @@ if(isset($_GET["action"]))
 <div class="container">
 			<div style="clear:both"></div>
 			<br />
-			<h3>Order Details</h3>
+			<h3>Winkelwagen</h3>
 			<div class="table-responsive">
 				<table class="table table-bordered">
 					<tr>
@@ -95,7 +95,12 @@ if(isset($_GET["action"]))
 						
 				</table>
 				<form method="post" action="./checkout">
-				<button class="btn btn-success" type="submit">Ga door naar Checkout</button>
+					<?php 
+					if(isset($_SESSION['loggedin'])) : ?>
+						<button class="btn btn-success" type="submit">Ga door naar Checkout</button>
+					<?php else : ?>
+						<a href="./login" class="btn btn-warning">Inloggen om te betalen!</a>
+					<?php endif ?> 
 				</form>
 			</div>
 		</div>
