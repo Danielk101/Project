@@ -5,7 +5,9 @@ session_start();
     if ($_POST) {
             $name = $_POST['name'];
             $description = $_POST['description'];
-            $image = $_POST['image'];
+            $image = $_FILES['image']['name'];
+            // image file directory
+            $target = "images/".basename($image);
             $price = $_POST['price'];
         $query = "INSERT INTO product (name, description, image, price)VALUES ('$name', '$description', '$image', '$price')";
 
